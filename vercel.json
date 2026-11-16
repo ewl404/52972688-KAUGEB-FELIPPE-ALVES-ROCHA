@@ -1,0 +1,27 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "node prepare-site.mjs",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "52972688-kaugeb-felippe-alves-rocha.jogodabolinha.space"
+        }
+      ],
+      "destination": "/domain-verification/jogodabolinha.html"
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        {
+          "type": "host",
+          "value": "52972688-kaugeb-felippe-alves-rocha.jogodabolinha.space"
+        }
+      ],
+      "destination": "/domain-verification/jogodabolinha.html"
+    }
+  ]
+}
